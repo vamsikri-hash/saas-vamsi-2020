@@ -22,9 +22,9 @@ class Todo
   end
 
   def to_s
-    @show_date = due_today? ? "" : @due_date
-    @check_box = @completed ? "[X]" : "[ ]"
-    "#{@check_box} #{@text}  #{@show_date}"
+    show_date = due_today? ? "" : @due_date
+    check_box = @completed ? "[X]" : "[ ]"
+    "#{check_box} #{@text}  #{show_date}"
   end
 end
 
